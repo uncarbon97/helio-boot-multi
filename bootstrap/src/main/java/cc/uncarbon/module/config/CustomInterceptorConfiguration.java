@@ -1,11 +1,10 @@
 package cc.uncarbon.module.config;
 
 import cc.uncarbon.framework.core.props.HelioProperties;
-import cc.uncarbon.module.interceptor.AdminSaTokenParseInterceptor;
-import cc.uncarbon.module.interceptor.DefaultSaTokenParseInterceptor;
 import cc.uncarbon.module.adminapi.constant.AdminApiConstant;
 import cc.uncarbon.module.appapi.constant.AppApiConstant;
-import cc.uncarbon.module.sys.constant.SysConstant;
+import cc.uncarbon.module.interceptor.AdminSaTokenParseInterceptor;
+import cc.uncarbon.module.interceptor.DefaultSaTokenParseInterceptor;
 import cn.dev33.satoken.interceptor.SaInterceptor;
 import cn.dev33.satoken.stp.StpUtil;
 import lombok.RequiredArgsConstructor;
@@ -38,11 +37,7 @@ public class CustomInterceptorConfiguration implements WebMvcConfigurer {
 
         registry
                 .addInterceptor(new AdminSaTokenParseInterceptor())
-                .addPathPatterns(
-                        // 兼容旧的API路由前缀
-                        SysConstant.SYS_MODULE_CONTEXT_PATH + "/**",
-                        AdminApiConstant.HTTP_API_URL_PREFIX + "/**"
-                );
+                .addPathPatterns(AdminApiConstant.HTTP_API_URL_PREFIX + "/**");
 
         /*
         2. 注解拦截器，启用注解功能

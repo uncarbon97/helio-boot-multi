@@ -8,19 +8,19 @@
     <parent>
         <groupId>cc.uncarbon.module</groupId>
         <artifactId>helio-boot-modular</artifactId>
-        <version>1.11.0</version>
+        <version>1.11.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>admin-api</artifactId>
-    <version>1.11.0</version>
+    <version>1.11.1</version>
 
     <properties>
         <!-- 引入其他服务模块 -->
         <!-- 后台管理服务 -->
-        <sys.version>1.11.0</sys.version>
+        <sys.version>1.11.1</sys.version>
         <!-- 对象存储服务 -->
-        <oss.version>1.11.0</oss.version>
+        <oss.version>1.11.1</oss.version>
     </properties>
 
     <dependencies>

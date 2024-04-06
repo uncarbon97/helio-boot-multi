@@ -8,14 +8,14 @@
     <parent>
         <groupId>cc.uncarbon.module</groupId>
         <artifactId>oss</artifactId>
-        <version>1.11.0</version>
+        <version>1.11.1</version>
     </parent>
 
     <artifactId>oss-service</artifactId>
 
     <properties>
         <!-- 引入其他服务模块 -->
-        <sys.version>1.11.0</sys.version>
+        <sys.version>1.11.1</sys.version>
     </properties>
 
     <dependencies>
@@ -23,7 +23,7 @@
         <dependency>
             <groupId>cc.uncarbon.module</groupId>
             <artifactId>oss-facade</artifactId>
-            <version>1.11.0</version>
+            <version>1.11.1</version>
         </dependency>
 
 

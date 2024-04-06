@@ -8,7 +8,7 @@
     <parent>
         <groupId>cc.uncarbon.module</groupId>
         <artifactId>helio-boot-modular</artifactId>
-        <version>1.11.0</version>
+        <version>1.11.1</version>
     </parent>
 
     <artifactId>bootstrap</artifactId>
@@ -17,16 +17,16 @@
     <properties>
         <!-- 制品版本号，建议每次打包发布时都调整以作区分 -->
         <!-- 全新项目可从 1.0.0 开始计数 -->
-        <products.version>1.11.0</products.version>
+        <products.version>1.11.1</products.version>
 
         <!-- 制品文件名 -->
         <products.filename>helio-boot</products.filename>
 
         <!-- 引入 HTTP-API 模块 -->
         <!-- 后台管理 HTTP-API -->
-        <admin-api.version>1.11.0</admin-api.version>
+        <admin-api.version>1.11.1</admin-api.version>
         <!-- C端 HTTP-API -->
-        <app-api.version>1.11.0</app-api.version>
+        <app-api.version>1.11.1</app-api.version>
     </properties>
 
     <dependencies>

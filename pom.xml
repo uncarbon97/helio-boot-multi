@@ -28,6 +28,7 @@
 
     <modules>
         <module>bootstrap</module>
+        <module>middleware/biz-common</module>
         <module>api/admin-api</module>
         <module>api/app-api</module>
         <module>service-module/sys</module>

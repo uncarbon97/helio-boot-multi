@@ -134,12 +134,7 @@ public class AdminOssUploadDownloadController {
                     String.format("%s/%s", requestUrl, ossFileInfo.getId())
             );
         } else {
-            /*if (fileStorageService.isSupportPresignedUrl(ossFileInfo.getStoragePlatform())) {
-                // 采用预签名地址下载
-                FileInfo fileInfo = OssFileInfoService.toFileInfo(ossFileInfo);
-                DateTime oneHourLater = DateUtil.offsetHour(DateUtil.date(), 1);
-                String preSignedUrl = fileStorageService.generatePresignedUrl(fileInfo, oneHourLater);
-                ossFileInfo.setDirectUrl(preSignedUrl);*/
+            // 获取预签名地址可参考 OssUploadDownloadFacadeImpl 的 downloadById 方法
             ret.setUrl(ossFileInfo.getDirectUrl());
         }
 

@@ -7,11 +7,11 @@
 
     <parent>
         <groupId>cc.uncarbon.module</groupId>
-        <artifactId>oss</artifactId>
-        <version>2.3.1</version>
+        <artifactId>blank</artifactId>
+        <version>0.0.0</version>
     </parent>
 
-    <artifactId>oss-facade</artifactId>
+    <artifactId>blank-facade</artifactId>
 
     <dependencies>
         <!-- 引入其他服务模块 -->
@@ -25,11 +25,5 @@
 
 
         <!-- 这里写其他第三方依赖 -->
-        <!-- 为了引入MultipartFile类 -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <optional>true</optional>
-        </dependency>
     </dependencies>
 </project>

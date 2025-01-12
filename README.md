@@ -134,4 +134,6 @@ JDK compatibility: 17 - 21
 │                                       │   └───xml  Mybatis Mapper XML
 │                                       ├───service  服务类
 │                                       └───util     静态工具类
+├───middleware
+│   └───biz-common  【Maven模块】业务开发公共包
 ```
